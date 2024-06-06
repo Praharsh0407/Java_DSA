@@ -138,7 +138,6 @@ public class Doubly_Linked_List {
         }
         head = tail = null;
         System.out.println("DLL is deleted");
-
     }
 
     public static void main(String[] args) {
