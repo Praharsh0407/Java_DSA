@@ -49,6 +49,21 @@ public class Stack_array {
         }
     }
 
+    //peek
+    public int peek(){
+        if (isEmpty()){
+            System.out.println("Empty Stack");
+            return -1;
+        }
+        return arr[topOfStack];
+    }
+
+    //delete 
+    public void delete(){
+        arr = null;
+        System.out.println("Stack deleted successfully");
+    }
+
     public static void main(String[] args) {
         Stack_array newStack = new Stack_array(4);
         // boolean result = newStack.isEmpty();
@@ -57,7 +72,10 @@ public class Stack_array {
         newStack.push(2);
         newStack.push(3);
         newStack.push(4);
-        int result = newStack.pop();
-        System.out.println(result);
+        // int result = newStack.peek();
+        // System.out.println(result);
+        // int result1= newStack.peek();
+        // System.out.println(result1);
+        newStack.delete();
     }
 }
