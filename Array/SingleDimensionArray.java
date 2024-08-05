@@ -1,3 +1,4 @@
+package Array;
 public class SingleDimensionArray{
     int arr[] = null;
     public SingleDimensionArray(int sizeOfArray) {
